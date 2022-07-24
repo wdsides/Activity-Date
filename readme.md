@@ -1,16 +1,10 @@
-=== Activity Date ===
-
 Contributors:      Will Sides
-
-Tags:              block
 
 Tested up to:      5.9
 
 Stable tag:        1.0.0
 
 License:           GPL-3.0-or-later
-
-License URI:       https://www.gnu.org/licenses/gpl-3.0.html
 
 Displays the date(s) of a post activity
 
