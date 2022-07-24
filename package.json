@@ -1,0 +1,24 @@
+{
+	"name": "activity-date",
+	"version": "0.1.0",
+	"description": "Displays the date(s) of a post activity from the 'activity-date' and 'activity-end-date' post meta fields",
+	"author": "Will Sides",
+	"license": "GPL-3.0-or-later",
+	"homepage": "https://github.com/wdsides/activity-date",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^22.2.1"
+	},
+	"dependencies": {
+		"classnames": "^2.3.1"
+	}
+}

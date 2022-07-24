@@ -1,0 +1,41 @@
+{
+	"$schema": "http://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "willsides/activity-date",
+	"version": "0.1.0",
+	"title": "Activity Date",
+	"category": "theme",
+	"icon": "calendar-alt",
+	"description": "Displays the date(s) of a post activity from the 'activity-date' and 'activity-end-date' post meta fields",
+	"supports": {
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"color": {
+			"gradients": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalLetterSpacing": true
+		}
+	},
+	"attributes": {
+		"textAlign": {
+			"type": "string"
+		}
+	},
+	"textdomain": "activity-date",
+	"editorScript": "file:./index.js",
+	"usesContext": [ "postId" ]
+}
