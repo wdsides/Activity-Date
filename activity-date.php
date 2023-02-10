@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Activity Date
- * Plugin URI:        https://github.com/wdsides/activity-date
+ * Plugin URI:        https://github.com/willsides/activity-date
  * Description:       Displays the date(s) of a post activity from the &#39;activity-date&#39; and &#39;activity-end-date&#39; post meta fields
  * Requires at least: 5.8
  * Requires PHP:      7.0

@@ -2,7 +2,7 @@
 	"$schema": "http://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
 	"name": "willsides/activity-date",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"title": "Activity Date",
 	"category": "theme",
 	"icon": "calendar-alt",
@@ -37,5 +37,5 @@
 	},
 	"textdomain": "activity-date",
 	"editorScript": "file:./index.js",
-	"usesContext": [ "postId" ]
+	"usesContext": [ "postId", "postType" ]
 }

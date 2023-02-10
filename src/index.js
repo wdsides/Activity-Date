@@ -1,6 +1,5 @@
 import classnames from 'classnames';
 import { registerBlockType } from '@wordpress/blocks';
-import { useSelect } from '@wordpress/data';
 import { useEntityProp } from '@wordpress/core-data';
 import {
 	AlignmentControl,
@@ -10,18 +9,18 @@ import {
 
 registerBlockType( 'willsides/activity-date', {
 
-	edit( { attributes: { textAlign }, setAttributes } ) {
+	edit( { 
+        attributes: { textAlign },
+        setAttributes,
+        context: { postType, postId } 
+    } ) {
         const blockProps = useBlockProps( {
             className: classnames( {
                 [ `has-text-align-${ textAlign }` ]: textAlign,
             } ),
         } );
-        const postType = useSelect(
-            ( select ) => select( 'core/editor' ).getCurrentPostType(),
-            []
-        );
- 
-        const [ meta ] = useEntityProp( 'postType', postType, 'meta' );
+
+        const [ meta ] = useEntityProp( 'postType', postType, 'meta', postId);
         const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
         const activity_date = new Date(meta[ 'activity_date' ]);
@@ -40,7 +39,7 @@ registerBlockType( 'willsides/activity-date', {
                     { month[activity_date.getUTCMonth()] } { activity_end_date.getUTCDate() }, { activity_end_date.getUTCFullYear() }
             </time></span>
 		)
-		console.log(activity_date)
+		// console.log(activity_date)
 
         return (
             <>
